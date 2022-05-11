@@ -77,6 +77,11 @@ body {
     color: var(--btn-card-bg);
 }
 
+.btn.active {
+    background-color: var(--body-background);
+    color: var(--btn-card-bg);
+}
+
 .custom {
     background-color: var(--very-light-grayish-cyan);
     font-family: inherit;
@@ -185,10 +190,18 @@ body {
     height: 40px;
     text-align: center;
     background-color: var(--dark-grayish-cyan);
-    opacity: .5;
     color: white;
     font-size: 22px;
     border: none;
     border-radius: 20px;
 }
 
+.btn-reset.active:hover {
+    background-color: hsl(172, 95%, 77%)
+}
+
+.btn-reset.active {
+    background-color: var(--body-background);
+    color: var(--btn-card-bg);
+    cursor: pointer;
+}
