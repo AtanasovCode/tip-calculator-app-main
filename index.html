@@ -1,44 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+
 </head>
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+    <div class="options-container">
+      <div class="price-container">
+        <h3>Bill</h3>
+        <input type="text" class="input" id="price" placeholder="0">
+      </div>
+      <div class="percent-container">
+        <h3>Select Tip %</h3>
+        <div class="percent-selection">
+          <input type="button" value="5%" class="btn" id="5">
+          <input type="button" value="10%" class="btn" id="10">
+          <input type="button" value="15%" class="btn" id="15">
+          <input type="button" value="25%" class="btn" id="25">
+          <input type="button" value="50%" class="btn" id="50">
+          <input type="text" placeholder="Custom" class="custom">
+        </div>
+      </div>
+      <div class="number-people-container">
+        <h3>Number of People</h3>
+        <input type="text" class="input" id="number-people" placeholder="0">
+      </div>
+    </div>
+    <div class="tip-container">
+      <div class="tips-container">
+        <div class="tip-amount">
+          <div class="text">
+            <h3>Tip Amount</h3>
+            <span>/ person</span>
+          </div>
+          <div class="number">
+            <span><img src="images/icon-dollar.svg" alt="icon dollar"></span>
+            <span>0.00</span>
+          </div>
+        </div>
+        <div class="total">
+          <div class="text">
+            <h3>Total</h3>
+            <span>/ person</span>
+          </div>
+          <div class="number">
+            <span><img src="images/icon-dollar.svg" alt="icon dollar"></span>
+            <span>0.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="reset-container">
+        <input type="button" value="Reset" class="btn-reset">
+      </div>
+    </div>
   </div>
 </body>
+
 </html>
